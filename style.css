@@ -1,7 +1,12 @@
-/* gold:#FFD801;
-purple:#4b006b; */
+/* 
+gold:#FFD801;
+purple:#4b006b;
+ */
 
-#HeaderBox {
+html, body{
+    background-color: #b5d99c;
+}
+ #HeaderBox {
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -11,19 +16,42 @@ purple:#4b006b; */
 }
 
 h1 {
-    background-color: blue;
+    background-color: #ffff82;
     margin-top: 0;
     margin-bottom: 0;
     border: transparent;
     right: 20px;
     font-size: 100px;
     text-indent: 40px;
+    color: #0f0326;
 }
 
 #HeaderTriangle {
-    background-image: linear-gradient(to top left, transparent 50%, blue 50%);
+    background-image: linear-gradient(to top left, transparent 50%, #ffff82 50%);
     height: 100px;
     width: 100%;
     margin-top: 0;
     border: transparent;
+}
+.Body{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#content{
+    background-color: beige;
+    
+}
+#table{
+    margin:auto;
+    color: #0f0326;
+}
+#BackgroundRectangle{
+    background-color: beige;
+    height: 200px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+h2{
+    margin-top: 0;
+    margin-bottom: 0;
 }
