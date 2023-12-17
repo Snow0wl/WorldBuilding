@@ -1,0 +1,29 @@
+/* gold:#FFD801;
+purple:#4b006b; */
+
+#HeaderBox {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 1%;
+    right: 1%;
+
+}
+
+h1 {
+    background-color: blue;
+    margin-top: 0;
+    margin-bottom: 0;
+    border: transparent;
+    right: 20px;
+    font-size: 100px;
+    text-indent: 40px;
+}
+
+#HeaderTriangle {
+    background-image: linear-gradient(to top left, transparent 50%, blue 50%);
+    height: 100px;
+    width: 100%;
+    margin-top: 0;
+    border: transparent;
+}
