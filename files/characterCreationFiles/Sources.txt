@@ -6,8 +6,15 @@ characterCreationFiles:personalityTraits:Neutral.txt
 characterCreationFiles:personalityTraits:Positive.txt
 https://ideonomy.mit.edu/essays/traits.html
 
+characterCreationFiles:catagories:humanoid:ageRange.txt
+https://www.nytimes.com/1997/08/05/world/jeanne-calment-world-s-elder-dies-at-122.html
+
 characterCreationFiles:catagories:humanoid:names.txt
 https://github.com/smashew/NameDatabases
 
+characterCreationFiles:catagories:humanoid:sexualities.txt
+https://www.deviantart.com/lovemystarfire/art/LGBT-Community-Terminology-and-Flags-448137798
+
 characterCreationFiles:catagories:humanoid:types.txt
 https://hr.harvard.edu/files/humanresources/files/race_ethincity_definitions_2014.pdf
+

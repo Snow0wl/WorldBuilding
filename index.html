@@ -155,6 +155,7 @@
         </div>
     </main>
     <script>
+      
       function loadFile(filePath) {
         var result = null;
         var xmlhttp = new XMLHttpRequest();
@@ -165,24 +166,47 @@
         }
         return result;
       }
+
+      function randomLine(string){
+        var fullFile = loadFile(string);
+        var lines = fullFile.split('\n');
+        var line = Math.floor(Math.random() * lines.length);
+        return lines[line];
+      }
+
       function newHumanoidCharacter(){
-        
-        document.getElementById("name").innerText = randomLine("files/characterCreationFiles/catagories/humanoid/names.txt");
-        let hasSuperpowers = false;
+        //sets 100% var
         let maxChance = 100;
+        let lowChance = 80;
+        let extremelyLowChance = 90;
+        //name
+        document.getElementById("name").innerText = randomLine("files/characterCreationFiles/catagories/humanoid/names.txt");
+        //mutated
+        var mutatedChance = Math.random() * maxChance;
+        if(mutatedChance>extremelyLowChance)
+        {
+            document.getElementById("mutated").innerText = "true";
+        }
+        else{
+          document.getElementById("mutated").innerText = "false";
+        }
+        //superpower
+        let hasSuperpowers = false;
         var superChance = Math.random() * maxChance;
-        if(superChance>80){
+        if(superChance>lowChance){
           document.getElementById("superpowers").innerText = randomLine("files/characterCreationFiles/superpowers.txt");
           hasSuperpowers = true;
         }
         if(hasSuperpowers){
           superChance2 = Math.random() * maxChance;
-          if(superChance2>80){
+          if(superChance2>lowChance){
             document.getElementById("superpower2").innerText = randomLine("files/characterCreationFiles/superpowers.txt");
           }
         }
+        //personalities
         newPersonalitites();
       }
+
       function newPersonalitites(){
         let numberOfTraits = 3;
         let traitList = Array();
@@ -197,6 +221,7 @@
         });
         document.getElementById("personalities").innerText = string;
       }
+
       function newPersonality(){
         let maxChance = 100;
         var chance = Math.random() * maxChance;
@@ -206,23 +231,16 @@
             var path = "files/characterCreationFiles/personalityTraits/Neutral.txt";
             break;
           case chance<54:
-            
             var path = "files/characterCreationFiles/personalityTraits/Positive.txt";
             break;
           case 53<chance:
-            
             var path = "files/characterCreationFiles/personalityTraits/Negative.txt";
             break;
         }
           return randomLine(path);
       }
 
-      function randomLine(string){
-        var fullFile = loadFile(string);
-        var lines = fullFile.split('\n');
-        var line = Math.floor(Math.random() * lines.length);
-        return lines[line];
-      }
+      
 
       
     </script>
