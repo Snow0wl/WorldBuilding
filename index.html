@@ -154,7 +154,6 @@
           
           traitList.push(personality);
         }
-       
         var string = "";
         traitList.forEach(function(element){
             string += element;
@@ -164,18 +163,14 @@
       function newPersonality(){
         let maxChance = 100;
         var chance = Math.random() * maxChance;
-        
         switch(true){
           case chance<18:
-            
             var fullFile = loadFile("files/personalityTraits/Neutral.txt");
             break;
           case chance<54:
-            
             var fullFile = loadFile("files/personalityTraits/Positive.txt");
             break;
           case 53<chance:
-            
             var fullFile = loadFile("files/personalityTraits/Negative.txt");
             break;
         }
@@ -185,7 +180,7 @@
       }
 
       function newName(){
-        var fullFile = loadFile("files/firstNames.txt");
+        var fullFile = loadFile("files/humanoidNames.txt");
         var lines = fullFile.split('\n');
         var line = Math.floor(Math.random() * lines.length);
         document.getElementById("name").innerText = lines[line];
