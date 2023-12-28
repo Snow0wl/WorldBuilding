@@ -120,12 +120,34 @@
                 </th>
               </tr>
             </table>
-            <input type="button" name="file" id="file" onclick="newCharacter()">
+            <button name="file" id="file" onclick="newHumanoidCharacter()">Humanoid</button>
+            <button name="file" id="file" >Mythic</button>
+            <button name="file" id="file" >Creature</button>
             <div class = 'Character'>
               <h3>name</h3>
-              <div id='name'></div>
+              <div id='name'>Name-Placeholder</div>
+              <h3>species</h3>
+              <div id='species'>Species-Placeholder</div>
+              <h3>type</h3>
+              <div id='type'>Type-Placeholder</div>
+              <h3>genetically mutated?</h3>
+              <div id='mutated'>Boolean-Placeholder</div>
+              <h3>natural-born powers?</h3>
+              <div id='natural'>Boolean-Placeholder</div>
+              <h3>superpowers</h3>
+              <div id='superpowers'>Superpower-Placeholder</div>
+              <h3>age</h3>
+              <div id='age'>Age-Placeholder</div>
+              <h3>sex</h3>
+              <div id='sex'>Sex-Placeholder</div>
+              <h3>sexuality</h3>
+              <div id='sexuality'>Sexuality-Placeholder</div>
+              <h3>skills</h3>
+              <div id='skills'>Skills-Placeholder</div>
               <h3>personalities</h3>
-              <div id='personalities'>hi</div>
+              <div id='personalities'>Personality-Placeholder</div>
+              <h3>ideologies</h3>
+              <div id='ideologies'>Ideology-Placeholder</div>
             </div>
           </div>  
         </div>
@@ -141,7 +163,7 @@
         }
         return result;
       }
-      function newCharacter(){
+      function newHumanoidCharacter(){
         
         newName();
         newPersonalitites();
@@ -180,7 +202,7 @@
       }
 
       function newName(){
-        var fullFile = loadFile("files/humanoidNames.txt");
+        var fullFile = loadFile("files/characterCreationFiles/catagories/humanoid/humanoidNames.txt");
         var lines = fullFile.split('\n');
         var line = Math.floor(Math.random() * lines.length);
         document.getElementById("name").innerText = lines[line];
