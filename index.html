@@ -122,8 +122,9 @@
             </table>
             <button name="file" id="file" onclick="newHumanoidCharacter()">Humanoid</button>
             <button name="file" id="file" >Mythic</button>
+            <button name="file" id="file" >Alien</button>
             <button name="file" id="file" >Creature</button>
-            <div class = 'Character'>
+            <div id = 'CharacterSheet'>
               <h3>name</h3>
               <div id='name'>Name-Placeholder</div>
               <h3>species</h3>
@@ -144,8 +145,8 @@
               <div id='sex'>Sex-Placeholder</div>
               <h3>sexuality</h3>
               <div id='sexuality'>Sexuality-Placeholder</div>
-              <h3>skills</h3>
-              <div id='skills'>Skills-Placeholder</div>
+              <h3>Experiances</h3>
+              <div id='experiances'>Skills-Placeholder</div>
               <h3>personalities</h3>
               <div id='personalities'>Personality-Placeholder</div>
               <h3>ideologies</h3>
@@ -154,6 +155,11 @@
           </div>  
         </div>
     </main>
+    <style>
+      #CharacterSheet{
+          display: none;
+      }
+    </style>
     <script>
       
       function loadFile(filePath) {
@@ -165,22 +171,32 @@
           result = xmlhttp.responseText;
         }
         return result;
+        // const reader = new FileReader();
+        // if (input) {
+        //   return reader.readAsText(input);
+        // }
       }
 
       function randomLine(string){
         var fullFile = loadFile(string);
+        console.log(fullFile);
         var lines = fullFile.split('\n');
         var line = Math.floor(Math.random() * lines.length);
         return lines[line];
       }
 
       function newHumanoidCharacter(){
+        
+        document.getElementById("CharacterSheet").style.display="block";
         //sets 100% var
         let maxChance = 100;
-        let lowChance = 80;
+        let lowChance = 70;
+        let lowerChance = 80;
         let extremelyLowChance = 90;
         //name
         document.getElementById("name").innerText = randomLine("files/characterCreationFiles/catagories/humanoid/names.txt");
+        //type
+        document.getElementById("type").innerText = randomLine("files/characterCreationFiles/catagories/humanoid/types.txt");
         //mutated
         var mutatedChance = Math.random() * maxChance;
         if(mutatedChance>extremelyLowChance)
@@ -193,33 +209,58 @@
         //superpower
         let hasSuperpowers = false;
         var superChance = Math.random() * maxChance;
-        if(superChance>lowChance){
+        if(superChance>lowerChance){
           document.getElementById("superpowers").innerText = randomLine("files/characterCreationFiles/superpowers.txt");
           hasSuperpowers = true;
         }
+        //superpower2
         if(hasSuperpowers){
           superChance2 = Math.random() * maxChance;
-          if(superChance2>lowChance){
+          if(superChance2>lowerChance){
             document.getElementById("superpower2").innerText = randomLine("files/characterCreationFiles/superpowers.txt");
           }
         }
+        //age
+        document.getElementById("age").innerText = Math.random() * Number(loadFile("files/characterCreationFiles/catagories/humanoid/ageRange.txt"));
+        //sex
+        document.getElementById("sex").innerText = randomLine("files/characterCreationFiles/catagories/humanoid/sexes.txt");
+        //sexualities
+        var sexualityChance = Math.random() * maxChance;
+        if(sexualityChance>lowChance){
+          document.getElementById("sex").innerText = "Heterosexual";
+        }
+        else{
+          document.getElementById("sexuality").innerText = randomLine("files/characterCreationFiles/catagories/humanoid/sexualities.txt");
+        }
+        //skills
+        document.getElementById("experiances").innerText = newSetOfThreeElements(newExperiance(),newExperiance(),newExperiance());
         //personalities
-        newPersonalitites();
+        document.getElementById("personalities").innerText = newSetOfThreeElements(newPersonality(),newPersonality(),newPersonality());
+        //ideologies
+        document.getElementById("ideologies").innerText = randomLine("files/characterCreationFiles/catagories/humanoid/ideologies.txt");
       }
 
-      function newPersonalitites(){
-        let numberOfTraits = 3;
+      function newSetOfThreeElements(elementOne,elementTwo,elementThree){
         let traitList = Array();
-        for(let i=0;i<numberOfTraits;i++){
-          var personality = newPersonality();
-          
-          traitList.push(personality);
-        }
+        traitList.push(elementOne);
+        traitList.push(elementTwo);
+        traitList.push(elementThree);
         var string = "";
         traitList.forEach(function(element){
             string += element;
         });
-        document.getElementById("personalities").innerText = string;
+        return string;
+      }
+
+      function newExperiance(){
+        let maxChance = 100;
+        var chance = Math.random() * maxChance;
+        if(chance>30){
+          return randomLine("files/characterCreationFiles/experiance.txt")
+        }
+        else{
+          return "empty\n";
+        }
       }
 
       function newPersonality(){
@@ -227,7 +268,6 @@
         var chance = Math.random() * maxChance;
         switch(true){
           case chance<18:
-            var fullFile = loadFile("files/characterCreationFiles/personalityTraits/Neutral.txt");
             var path = "files/characterCreationFiles/personalityTraits/Neutral.txt";
             break;
           case chance<54:
