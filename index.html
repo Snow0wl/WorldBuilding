@@ -136,6 +136,8 @@
               <div id='natural'>Boolean-Placeholder</div>
               <h3>superpowers</h3>
               <div id='superpowers'>Superpower-Placeholder</div>
+              <h3>superpower 2?</h3>
+              <div id='superpower2'>Superpower-Placeholder</div>
               <h3>age</h3>
               <div id='age'>Age-Placeholder</div>
               <h3>sex</h3>
@@ -165,7 +167,20 @@
       }
       function newHumanoidCharacter(){
         
-        document.getElementById("name").innerText = newName();
+        document.getElementById("name").innerText = randomLine("files/characterCreationFiles/catagories/humanoid/names.txt");
+        let hasSuperpowers = false;
+        let maxChance = 100;
+        var superChance = Math.random() * maxChance;
+        if(superChance>80){
+          document.getElementById("superpowers").innerText = randomLine("files/characterCreationFiles/superpowers.txt");
+          hasSuperpowers = true;
+        }
+        if(hasSuperpowers){
+          superChance2 = Math.random() * maxChance;
+          if(superChance2>80){
+            document.getElementById("superpower2").innerText = randomLine("files/characterCreationFiles/superpowers.txt");
+          }
+        }
         newPersonalitites();
       }
       function newPersonalitites(){
@@ -188,24 +203,24 @@
         switch(true){
           case chance<18:
             var fullFile = loadFile("files/characterCreationFiles/personalityTraits/Neutral.txt");
+            var path = "files/characterCreationFiles/personalityTraits/Neutral.txt";
             break;
           case chance<54:
-            var fullFile = loadFile("files/characterCreationFiles/personalityTraits/Positive.txt");
+            
+            var path = "files/characterCreationFiles/personalityTraits/Positive.txt";
             break;
           case 53<chance:
-            var fullFile = loadFile("files/characterCreationFiles/personalityTraits/Negative.txt");
+            
+            var path = "files/characterCreationFiles/personalityTraits/Negative.txt";
             break;
         }
-        var lines = fullFile.split('\n');
-        var line = Math.floor(Math.random() * lines.length);
-        return lines[line];
+          return randomLine(path);
       }
 
-      function newName(){
-        var fullFile = loadFile("files/characterCreationFiles/catagories/humanoid/names.txt");
+      function randomLine(string){
+        var fullFile = loadFile(string);
         var lines = fullFile.split('\n');
         var line = Math.floor(Math.random() * lines.length);
-        
         return lines[line];
       }
 
