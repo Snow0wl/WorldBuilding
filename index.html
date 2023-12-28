@@ -121,7 +121,12 @@
               </tr>
             </table>
             <input type="button" name="file" id="file" onclick="newCharacter()">
-            <div id='output'></div>
+            <div class = 'Character'>
+              <h3>name</h3>
+              <div id='name'></div>
+              <h3>personalities</h3>
+              <div id='personalities'>hi</div>
+            </div>
           </div>  
         </div>
     </main>
@@ -137,15 +142,55 @@
         return result;
       }
       function newCharacter(){
+        
         newName();
+        newPersonalitites();
+      }
+      function newPersonalitites(){
+        let numberOfTraits = 3;
+        let traitList = Array();
+        for(let i=0;i<numberOfTraits;i++){
+          var personality = newPersonality();
+          
+          traitList.push(personality);
+        }
+       
+        var string = "";
+        traitList.forEach(function(element){
+            string += element;
+        });
+        document.getElementById("personalities").innerText = string;
+      }
+      function newPersonality(){
+        let maxChance = 100;
+        var chance = Math.random() * maxChance;
+        
+        switch(true){
+          case chance<18:
+            
+            var fullFile = loadFile("files/personalityTraits/Neutral.txt");
+            break;
+          case chance<54:
+            
+            var fullFile = loadFile("files/personalityTraits/Positive.txt");
+            break;
+          case 53<chance:
+            
+            var fullFile = loadFile("files/personalityTraits/Negative.txt");
+            break;
+        }
+        var lines = fullFile.split('\n');
+        var line = Math.floor(Math.random() * lines.length);
+        return lines[line];
       }
 
       function newName(){
         var fullFile = loadFile("files/firstNames.txt");
         var lines = fullFile.split('\n');
         var line = Math.floor(Math.random() * lines.length);
-        document.getElementById("output").innerText = lines[line];
+        document.getElementById("name").innerText = lines[line];
       }
+
       
     </script>
   </body>
