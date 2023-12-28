@@ -9,7 +9,6 @@
   </head>
   <body>
     <main>
-      
         <div class = "post" id = "HeaderBox" >
           <h1>WorldBuilding</h1> 
           <div id = "HeaderTriangle" ></div>
@@ -121,8 +120,33 @@
                 </th>
               </tr>
             </table>
+            <input type="button" name="file" id="file" onclick="newCharacter()">
+            <div id='output'></div>
           </div>  
         </div>
     </main>
+    <script>
+      function loadFile(filePath) {
+        var result = null;
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.open("GET", filePath, false);
+        xmlhttp.send();
+        if (xmlhttp.status==200) {
+          result = xmlhttp.responseText;
+        }
+        return result;
+      }
+      function newCharacter(){
+        newName();
+      }
+
+      function newName(){
+        var fullFile = loadFile("files/firstNames.txt");
+        var lines = fullFile.split('\n');
+        var line = Math.floor(Math.random() * lines.length);
+        document.getElementById("output").innerText = lines[line];
+      }
+      
+    </script>
   </body>
 </html>
