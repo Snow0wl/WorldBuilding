@@ -165,7 +165,7 @@
       }
       function newHumanoidCharacter(){
         
-        newName();
+        document.getElementById("name").innerText = newName();
         newPersonalitites();
       }
       function newPersonalitites(){
@@ -187,13 +187,13 @@
         var chance = Math.random() * maxChance;
         switch(true){
           case chance<18:
-            var fullFile = loadFile("files/personalityTraits/Neutral.txt");
+            var fullFile = loadFile("files/characterCreationFiles/personalityTraits/Neutral.txt");
             break;
           case chance<54:
-            var fullFile = loadFile("files/personalityTraits/Positive.txt");
+            var fullFile = loadFile("files/characterCreationFiles/personalityTraits/Positive.txt");
             break;
           case 53<chance:
-            var fullFile = loadFile("files/personalityTraits/Negative.txt");
+            var fullFile = loadFile("files/characterCreationFiles/personalityTraits/Negative.txt");
             break;
         }
         var lines = fullFile.split('\n');
@@ -202,10 +202,11 @@
       }
 
       function newName(){
-        var fullFile = loadFile("files/characterCreationFiles/catagories/humanoid/humanoidNames.txt");
+        var fullFile = loadFile("files/characterCreationFiles/catagories/humanoid/names.txt");
         var lines = fullFile.split('\n');
         var line = Math.floor(Math.random() * lines.length);
-        document.getElementById("name").innerText = lines[line];
+        
+        return lines[line];
       }
 
       
