@@ -1,0 +1,13 @@
+characterCreationFiles:superpowers.txt
+https://powerlisting.fandom.com/wiki/Superpowers#Bodily_Aspects
+
+characterCreationFiles:personalityTraits:Negative.txt
+characterCreationFiles:personalityTraits:Neutral.txt
+characterCreationFiles:personalityTraits:Positive.txt
+https://ideonomy.mit.edu/essays/traits.html
+
+characterCreationFiles:catagories:humanoid:names.txt
+https://github.com/smashew/NameDatabases
+
+characterCreationFiles:catagories:humanoid:types.txt
+https://hr.harvard.edu/files/humanresources/files/race_ethincity_definitions_2014.pdf
