@@ -1,166 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script type="module" src="./index.js"></script>
-    <title>WorldBuilding</title>
-    <link rel="stylesheet" href="./style.css">
-  </head>
-  <body>
-    <main>
-        <div class = "post" id = "HeaderBox" >
-          <h1>WorldBuilding</h1> 
-          <div id = "HeaderTriangle" ></div>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="module" src="./index.js"></script>
+
+  <!-- <script type="module" src="./files/characterCreationFiles/catagories/humanoid/names.json"></script> -->
+  <title>WorldBuilding</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <main>
+    <div class="post" id="HeaderBox">
+      <h1>WorldBuilding</h1>
+      <div id="HeaderTriangle"></div>
+    </div>
+    <div class="post">
+      <div id="BackgroundRectangle"></div>
+    </div>
+    <div class="Body">
+      <div id="content">
+        <h2>Top-Down</h2>
+        <table id="table">
+          <tr>
+            <th>
+              <p>Left Side</p>
+            </th>
+            <th>
+              <p>Characters</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <p>Technology</p>
+            </th>
+            <th>
+              <p>Right Side</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <p>Left Side</p>
+            </th>
+            <th>
+              <p>Worlds and Continents</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <p>Climates</p>
+            </th>
+            <th>
+              <p>Right Side</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <p>Left Side</p>
+            </th>
+            <th>
+              <p>History</p>
+            </th>
+          </tr>
+        </table>
+        <h2>Bottom-Up</h2>
+        <table id="table">
+          <tr>
+            <th>
+              <p>Left Side</p>
+            </th>
+            <th>
+              <p>Local Geography</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <p>Culture</p>
+            </th>
+            <th>
+              <p>Right Side</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <p>Left Side</p>
+            </th>
+            <th>
+              <p>Social Structure</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <p>Government</p>
+            </th>
+            <th>
+              <p>Right Side</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <p>Left Side</p>
+            </th>
+            <th>
+              <p>Politics</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <p>Commerce</p>
+            </th>
+            <th>
+              <p>Right Side</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <p>Left Side</p>
+            </th>
+            <th>
+              <p>History</p>
+            </th>
+          </tr>
+        </table>
+        <button name="file" id="humanoidButton" >Humanoid</button>
+        <button name="file" id="file">Mythic</button>
+        <button name="file" id="file">Alien</button>
+        <button name="file" id="file">Creature</button>
+        <div id='CharacterSheet'>
+          <h3>name</h3>
+          <div id='name'>Name-Placeholder</div>
+          <h3>species</h3>
+          <div id='species'>Species-Placeholder</div>
+          <h3>type/race</h3>
+          <div id='type'>Type-Placeholder</div>
+          <h3>genetically mutated?</h3>
+          <div id='mutated'>Boolean-Placeholder</div>
+          <h3>natural-born powers?</h3>
+          <div id='natural'>Boolean-Placeholder</div>
+          <h3>superpowers</h3>
+          <div id='superpowers'>Superpower-Placeholder</div>
+          <h3>superpower 2?</h3>
+          <div id='superpower2'>Superpower-Placeholder</div>
+          <h3>age</h3>
+          <div id='age'>Age-Placeholder</div>
+          <h3>sex</h3>
+          <div id='sex'>Sex-Placeholder</div>
+          <h3>sexuality</h3>
+          <div id='sexuality'>Sexuality-Placeholder</div>
+          <h3>Experiances</h3>
+          <div id='experiance'>Skills-Placeholder</div>
+          <h3>personalities</h3>
+          <div id='personality'>Personality-Placeholder</div>
+          <h3>ideologies</h3>
+          <div id='ideology'>Ideology-Placeholder</div>
         </div>
-        <div class= "post">
-          <div id="BackgroundRectangle"></div>
-        </div>
-        <div class="Body">
-          <div id = "content">
-            <h2>Top-Down</h2>
-            <table id="table">
-              <tr>
-                <th>
-                  <p>Left Side</p>
-                </th>
-                <th>
-                  <p>Characters</p>
-                </th>
-              </tr>
-              <tr>
-                <th>
-                  <p>Technology</p>
-                </th>
-                <th>
-                  <p>Right Side</p>
-                </th>
-              </tr>
-              <tr>
-                <th>
-                  <p>Left Side</p>
-                </th>
-                <th>
-                  <p>Worlds and Continents</p>
-                </th>
-              </tr>
-              <tr>
-                <th>
-                  <p>Climates</p>
-                </th>
-                <th>
-                  <p>Right Side</p>
-                </th>
-              </tr>
-              <tr>
-                <th>
-                  <p>Left Side</p>
-                </th>
-                <th>
-                  <p>History</p>
-                </th>
-              </tr>
-            </table>
-            <h2>Bottom-Up</h2>
-            <table id="table">
-              <tr>
-                <th>
-                  <p>Left Side</p>
-                </th>
-                <th>
-                  <p>Local Geography</p>
-                </th>
-              </tr>
-              <tr>
-                <th>
-                  <p>Culture</p>
-                </th>
-                <th>
-                  <p>Right Side</p>
-                </th>
-              </tr>
-              <tr>
-                <th>
-                  <p>Left Side</p>
-                </th>
-                <th>
-                  <p>Social Structure</p>
-                </th>
-              </tr>
-              <tr>
-                <th>
-                  <p>Government</p>
-                </th>
-                <th>
-                  <p>Right Side</p>
-                </th>
-              </tr>
-              <tr>
-                <th>
-                  <p>Left Side</p>
-                </th>
-                <th>
-                  <p>Politics</p>
-                </th>
-              </tr>
-              <tr>
-                <th>
-                  <p>Commerce</p>
-                </th>
-                <th>
-                  <p>Right Side</p>
-                </th>
-              </tr>
-              <tr>
-                <th>
-                  <p>Left Side</p>
-                </th>
-                <th>
-                  <p>History</p>
-                </th>
-              </tr>
-            </table>
-            <button name="file" id="file" onclick="newHumanoidCharacter()">Humanoid</button>
-            <button name="file" id="file" >Mythic</button>
-            <button name="file" id="file" >Alien</button>
-            <button name="file" id="file" >Creature</button>
-            <div id = 'CharacterSheet'>
-              <h3>name</h3>
-              <div id='name'>Name-Placeholder</div>
-              <h3>species</h3>
-              <div id='species'>Species-Placeholder</div>
-              <h3>type</h3>
-              <div id='type'>Type-Placeholder</div>
-              <h3>genetically mutated?</h3>
-              <div id='mutated'>Boolean-Placeholder</div>
-              <h3>natural-born powers?</h3>
-              <div id='natural'>Boolean-Placeholder</div>
-              <h3>superpowers</h3>
-              <div id='superpowers'>Superpower-Placeholder</div>
-              <h3>superpower 2?</h3>
-              <div id='superpower2'>Superpower-Placeholder</div>
-              <h3>age</h3>
-              <div id='age'>Age-Placeholder</div>
-              <h3>sex</h3>
-              <div id='sex'>Sex-Placeholder</div>
-              <h3>sexuality</h3>
-              <div id='sexuality'>Sexuality-Placeholder</div>
-              <h3>Experiances</h3>
-              <div id='experiances'>Skills-Placeholder</div>
-              <h3>personalities</h3>
-              <div id='personalities'>Personality-Placeholder</div>
-              <h3>ideologies</h3>
-              <div id='ideologies'>Ideology-Placeholder</div>
-            </div>
-          </div>  
-        </div>
-    </main>
-    <style>
-      #CharacterSheet{
-          display: none;
+      </div>
+    </div>
+  </main>
+  <style>
+    #CharacterSheet {
+      display: none;
+    }
+  </style>
+  <script type="module">
+    import { returnElement } from "./index.js";
+    window.addEventListener('click' , e=> {
+        switch(e.target.id){
+           case 'humanoidButton':
+             newHumanoidCharacter();
+             break;
+        }
+    })
+    function newHumanoidCharacter() {
+
+      document.getElementById("CharacterSheet").style.display = "block";
+      //sets 100% var
+      let maxChance = 100;
+      let lowChance = 70;
+      let lowerChance = 80;
+      let extremelyLowChance = 90;
+      //name
+      returnElement("name");
+      //type
+      returnElement("type");
+      //mutated
+      var mutatedChance = Math.random() * maxChance;
+      if(mutatedChance>extremelyLowChance)
+      {
+          document.getElementById("mutated").innerText = "true";
       }
-    </style>
-    
-  </body>
+      else{
+        document.getElementById("mutated").innerText = "false";
+      }
+      //superpower
+      let hasSuperpowers = false;
+      var superChance = Math.random() * maxChance;
+      if(superChance>10){
+        returnElement("superpowers");
+        hasSuperpowers = true;
+      }
+      //superpower2
+      if(hasSuperpowers){
+        let superChance2 = Math.random() * maxChance;
+        if(superChance2>lowerChance){
+          returnElement("superpower2");
+        }
+      }
+      //age
+      returnElement("age");
+      //sex
+      returnElement("sex");
+      //sexualities
+      var sexualityChance = Math.random() * maxChance;
+      if(sexualityChance>lowChance){
+        document.getElementById("sexuality").innerText = "Heterosexual";
+      }
+      else{
+        returnElement("sexuality");
+      }
+      //skills
+      returnElement("experiance");
+      //personalities
+      returnElement("personality");
+      //ideology
+      returnElement("ideology");
+    }
+  </script>
+</body>
+
 </html>

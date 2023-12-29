@@ -1,6 +1,0 @@
-White
-Black
-Hispanic/Latino
-Asian
-AmericanIndian/AlaskaNative
-NativeHawaiian/PacificIslander
