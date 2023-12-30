@@ -121,10 +121,10 @@
             </th>
           </tr>
         </table>
-        <button name="file" id="humanoidButton" >Humanoid</button>
-        <button name="file" id="file">Mythic</button>
-        <button name="file" id="file">Alien</button>
-        <button name="file" id="file">Creature</button>
+        <button name="file" id="humanoid" >Humanoid</button>
+        <button name="file" id="mythic">Mythic</button>
+        <button name="file" id="alien">Alien</button>
+        <button name="file" id="creature">Creature</button>
         <div id='CharacterSheet'>
           <h3>name</h3>
           <div id='nameList'>Name-Placeholder</div>
@@ -135,7 +135,7 @@
           <h3>genetically mutated?</h3>
           <div id='mutated'>Boolean-Placeholder</div>
           <h3>natural-born powers?</h3>
-          <div id='natural'>Boolean-Placeholder</div>
+          <div id='naturalBornPowersList'>Boolean-Placeholder</div>
           <h3>superpowers</h3>
           <div id='superList'>Superpower-Placeholder</div>
           <h3>superpower 2?</h3>
@@ -152,6 +152,14 @@
           <div id='personality'>Personality-Placeholder</div>
           <h3>ideologies</h3>
           <div id='ideologyList'>Ideology-Placeholder</div>
+          <h3>place-of-origin</h3>
+          <div id='originLocation'>Origin-Placeholder</div>
+          <h3>diet</h3>
+          <div id='diet'>Diet-Placeholder</div>
+          <h3>ThreatLevel</h3>
+          <div id='threatLevel'>ThreatLevel-Placeholder</div>
+          <h3>element</h3>
+          <div id='element'>Element-Placeholder</div>
         </div>
       </div>
     </div>
@@ -162,18 +170,10 @@
     }
   </style>
   <script type="module">
-    import { newHumanoidCharacter } from "./index.js";
+    import { newCharacter } from "./index.js";
     window.addEventListener('click' , e=> {
-        newCharacter(e.target.id);
+      newCharacter(e.target.id);
     })
-    function newCharacter(buttonID){
-      switch(buttonID){
-           case 'humanoidButton':
-             newHumanoidCharacter();
-             break;
-        }
-    }
-    
   </script>
 </body>
 

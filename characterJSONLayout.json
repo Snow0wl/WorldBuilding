@@ -1,0 +1,94 @@
+{
+    "humanoid": {
+        "Placeholder": {
+            "originLocation": "Placeholder",
+            "nameList": [
+                "Placeholder"
+            ],
+            "typeList": [
+                "Placeholder"
+            ],
+            "ageRange": "Placeholder",
+            "sexesList": [
+                "Placeholder"
+            ],
+            "sexualityList": [
+                "Placeholder"
+            ],
+            "ideologyList": [
+                "Placeholder"
+            ],
+            "diet":"Placeholder",
+            "threatLevel":"Placeholder",
+            "element":"Placeholder"
+        }
+    }
+    ,
+    "mythic": {
+        "Placeholder": {
+            "originLocation": "Placeholder1",
+            "nameList": [
+                "Placeholder2"
+            ],
+            "naturalBornPowersList":["Placeholder3"],
+            "ageRange": "Placeholder4",
+            "sexesList": [
+                "Placeholder5"
+            ],
+            "sexualityList": [
+                "Placeholder6"
+            ],
+            "ideologyList": [
+                "Placeholder7"
+            ],
+            "diet":"Placeholder8",
+            "threatLevel":"Placeholder9",
+            "element":"Placeholder10"
+        }
+    }
+    ,
+    "alien": {
+        "Placeholder": {
+            "originLocation": "Placeholder",
+            "nameList": [
+                "Placeholder"
+            ],
+            "typeList": [
+                "Placeholder"
+            ],
+            "naturalBornPowersList":["Placeholder"],
+            "ageRange": "Placeholder",
+            "sexesList": [
+                "Placeholder"
+            ],
+            "sexualityList": [
+                "Placeholder"
+            ],
+            "ideologyList": [
+                "Placeholder"
+            ],
+            "diet":"Placeholder",
+            "threatLevel":"Placeholder",
+            "element":"Placeholder"
+        }
+    }
+    ,
+    "creature": {
+        "Placeholder": {
+            "originLocation": "Placeholder",
+            "nameList": [
+                "Placeholder"
+            ],
+            "typeList": [
+                "Placeholder"
+            ],
+            "naturalBornPowersList":["Placeholder"],
+            "sexesList": [
+                "Placeholder"
+            ],
+            "diet":"Placeholder",
+            "threatLevel":"Placeholder",
+            "element":"Placeholder"
+        }
+    }
+}
