@@ -1,0 +1,31 @@
+{
+    "alien": {
+        "placeholder1": {
+            "originLocation": "Placeholder1",
+            "nameList": [
+                "Zygarde the great"
+            ],
+            "typeList": [
+                "place"
+            ],
+            "naturalBornPowersList": [
+                "Placeholder3",
+                "p3",
+                "p4"
+            ],
+            "ageRange": "100",
+            "sexesList": [
+                "Placeholder5"
+            ],
+            "sexualityList": [
+                "Placeholder6"
+            ],
+            "ideologyList": [
+                "Placeholder7"
+            ],
+            "diet": "Placeholder8",
+            "threatLevel": "Placeholder9",
+            "element": "Placeholder10"
+        }
+    }
+}

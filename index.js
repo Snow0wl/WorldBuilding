@@ -1,11 +1,11 @@
 import humanoidCharacterStats from './humanoid.json' assert { type: 'json' };
 import mythicCharacterStats from './mythic.json' assert { type: 'json' };
-
-
+import alienCharacterStats from './alien.json' assert { type: 'json' };
+import creatureCharacterStats from './creature.json' assert { type: 'json' };
 import HumanoidSpecies from './humanoidSpeciesList.json' assert { type: 'json' };
 import MythicSpecies from './mythicSpeciesList.json' assert { type: 'json' };
-
-
+import AlienSpecies from './alienSpeciesList.json' assert { type: 'json' };
+import CreatureSpecies from './creatureSpeciesList.json' assert { type: 'json' };
 import generalCharacterStats from './generalCharacterStats.json' assert { type: 'json' };
 
 function humanoidToList(character, species) {
@@ -16,20 +16,30 @@ function humanoidToList(character, species) {
         case character == "mythic":
             var options = MythicSpecies[species];
             break;
+        case character == "alien":
+            var options = AlienSpecies[species];
+            break;
+        case character == "creature":
+            var options = CreatureSpecies[species];
+            break;
     }
-  
     return options;
 }
 function humanoidSpeciesToList(character, species,id) {
     switch (true){
         case character == "humanoid":
-            var options = humanoidCharacterStats.humanoid[species][id];
+            var options = humanoidCharacterStats[character][species][id];
             break;
         case character == "mythic":
-            var options = mythicCharacterStats.mythic[species][id];
+            var options = mythicCharacterStats[character][species][id];
             break;
-    }
-    
+        case character == "alien":
+            var options = alienCharacterStats[character][species][id];
+            break;
+        case character == "creature":
+            var options = creatureCharacterStats[character][species][id];
+            break;
+    } 
     return options;
 }
 
@@ -57,7 +67,6 @@ function generalToList(id) {
 }
 
 function randomLine(list) {
-
     var element = Math.floor(Math.random() * list.length);
     return list[element];
 }
@@ -70,20 +79,7 @@ function printFullList(list){
 }
 
 function returnSpecies(character, species) {
-    switch (true) {
-        case character == "humanoid":
-            var listFunction = humanoidToList(character, species);
-            break;
-        case character == "mythic":
-            var listFunction = humanoidToList(character, species);
-            break;
-        // case character == "alien":
-        //     var listFunction = humanoidToList(species);
-        //     break;
-        // case character == "creature":
-        //     var listFunction = humanoidToList(species);
-        //     break;
-    }
+    var listFunction = humanoidToList(character, species);
     var list = listFunction;
     var species = randomLine(list);
     document.getElementById("speciesList").innerText = species;
@@ -91,20 +87,7 @@ function returnSpecies(character, species) {
 }
 
 function returnElement(character, species, id) {
-    switch (true) {
-        case character === "humanoid":
-            var listFunction = humanoidSpeciesToList(character, species,id);
-            break;
-        case character === "mythic":
-            var listFunction = humanoidSpeciesToList(character,species,id);
-            break;
-        case character === "alien":
-            var listFunction = humanoidSpeciesToList(species,id);
-            break;
-        case character === "creature":
-            var listFunction = humanoidSpeciesToList(species,id);
-            break;
-    }
+    var listFunction = humanoidSpeciesToList(character, species,id);
     switch(true){
         case id === "personality":
             document.getElementById(id).innerText = getPersonalities();
@@ -138,9 +121,7 @@ function returnElement(character, species, id) {
             var list = listFunction;
             document.getElementById(id).innerText = randomLine(list);
             return;
-
     }
-   
 }
 function getPersonalities() {
     let traitList = Array();
@@ -305,7 +286,7 @@ export function newCharacter(character) {
     //personalities
     getPersonality(character, species);
     //ideology
-    returnElement(character, species, "ideologyList");
+    getIdeology(character, species)
     //origin
     returnElement(character, species, "originLocation");
     //diet

@@ -172,7 +172,15 @@
   <script type="module">
     import { newCharacter } from "./index.js";
     window.addEventListener('click' , e=> {
-      newCharacter(e.target.id);
+      switch(e.target.id){
+            case 'humanoid':
+            case 'mythic':
+            case 'alien':
+            case 'creature':
+              newCharacter(e.target.id);
+              break;
+        }
+      
     })
   </script>
 </body>
