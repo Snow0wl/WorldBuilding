@@ -161,7 +161,7 @@ export function newHumanoidCharacter() {
     //superpower
     let hasSuperpowers = false;
     var superChance = Math.random() * maxChance;
-    if (superChance > 10) {
+    if (superChance > lowChance) {
         returnElement(character, species, "superList");
         hasSuperpowers = true;
     }
