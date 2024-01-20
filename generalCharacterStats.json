@@ -307,9 +307,31 @@
         "Unity"
     ],
     "proficiencyList": [
-        "Coding",
-        "Mining",
-        "PublicSpeaking"
+        "Programmer",
+        "Miner",
+        "Speaker",
+        "Barbarian",
+        "Bard",
+        "Cleric",
+        "Druid",
+        "Fighter",
+        "Monk",
+        "Paladin",
+        "Ranger",
+        "Rogue",
+        "Sorcerer",
+        "Warlock",
+        "Witch",
+        "Wizard",
+        "Artificer",
+        "Blood Hunter",
+        "Librarian",
+        "Pope",
+        "Clergyman",
+        "Nun",
+        "Apostle",
+        "High Priest",
+        "Priest"
     ],
     "personality": {
         "negativeList": [

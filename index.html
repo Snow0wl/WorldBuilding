@@ -10,10 +10,29 @@
 </head>
 <body>
   <main>
-    <div class="post" id="HeaderBox">
+    <!-- Tier1 -->
+    <div id="HeaderBox">
       <h1>WorldBuilding</h1>
+      <div class="post">
+        <div id="HotBarBackground"></div>
+      </div>
       <div id="HeaderTriangle"></div>
     </div>
+    <!-- Tier2 -->
+    <div id="HeaderBox2">
+      <h1>W</h1>
+      
+      <div id="HeaderTriangle2"></div>
+    </div>
+    <!-- Tier3 -->
+    <div id="HeaderBox3">
+      <div class="post">
+        <div id="HeaderSide"></div>
+        <div id ="HeaderSideBottom"></div>
+      </div>
+    </div>
+    <!-- Tier4 -->
+    <!-- Tier0 -->
     <div class="post">
       <div id="BackgroundRectangle"></div>
     </div>
@@ -139,69 +158,13 @@
             </th>
           </tr>
         </table>
-        <h1>Character Creation</h1>
-        <button name="file" id="humanoid" >Humanoid</button>
-        <button name="file" id="mythic">Mythic</button>
-        <button name="file" id="alien">Alien</button>
-        <button name="file" id="creature">Creature</button>
-        <div id='CharacterSheet'>
-          <h3>name</h3>
-          <div id='nameList'>Name-Placeholder</div>
-          <h3>species</h3>
-          <div id='speciesList'>Species-Placeholder</div>
-          <h3>type/race</h3>
-          <div id='typeList'>Type-Placeholder</div>
-          <h3>genetically mutated?</h3>
-          <div id='mutated'>Boolean-Placeholder</div>
-          <h3>natural-born powers?</h3>
-          <div id='naturalBornPowersList'>Boolean-Placeholder</div>
-          <h3>superpowers</h3>
-          <div id='superList'>Superpower-Placeholder</div>
-          <h3>superpower 2?</h3>
-          <div id='superList2'>Superpower-Placeholder</div>
-          <h3>age</h3>
-          <div id='ageRange'>Age-Placeholder</div>
-          <h3>sex</h3>
-          <div id='sexesList'>Sex-Placeholder</div>
-          <h3>sexuality</h3>
-          <div id='sexualityList'>Sexuality-Placeholder</div>
-          <h3>Experiances</h3>
-          <div id='proficiencyList'>Skills-Placeholder</div>
-          <h3>personalities</h3>
-          <div id='personality'>Personality-Placeholder</div>
-          <h3>ideologies</h3>
-          <div id='ideologyList'>Ideology-Placeholder</div>
-          <h3>place-of-origin</h3>
-          <div id='originLocation'>Origin-Placeholder</div>
-          <h3>diet</h3>
-          <div id='diet'>Diet-Placeholder</div>
-          <h3>ThreatLevel</h3>
-          <div id='threatLevel'>ThreatLevel-Placeholder</div>
-          <h3>element</h3>
-          <div id='element'>Element-Placeholder</div>
-        </div>
+        <h1>Tools</h1>
+        <h2>CharacterGen</h2>
+        <a href="characterGen.html">Character Creation</a>
+        <h2>MapGen</h2>
+        <a href="mapGen.html">Map Generation</a>
       </div>
     </div>
   </main>
-  <style>
-    #CharacterSheet {
-      display: none;
-    }
-  </style>
-  <script type="module">
-    import { newCharacter } from "./index.js";
-    window.addEventListener('click' , e=> {
-      switch(e.target.id){
-            case 'humanoid':
-            case 'mythic':
-            case 'alien':
-            case 'creature':
-              newCharacter(e.target.id);
-              break;
-        }
-      
-    })
-  </script>
 </body>
-
 </html>

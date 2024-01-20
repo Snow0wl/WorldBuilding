@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="module" src="./index.js"></script>
+  <title>WorldBuilding</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <main>
+    <div class="post" id="HeaderBox">
+      <h1>WorldBuilding</h1>
+      <div id="HeaderTriangle"></div>
+    </div>
+    <div class="post">
+      <div id="BackgroundRectangle"></div>
+    </div>
+    <div class="Body">
+      <div id="content">
+        <h1>Character Creation</h1>
+        <button name="file" id="humanoid">Humanoid</button>
+        <button name="file" id="mythic">Mythic</button>
+        <button name="file" id="alien">Alien</button>
+        <button name="file" id="creature">Creature</button>
+        <div id='CharacterSheet'>
+          <h3>name</h3>
+          <div id='nameList'>Name-Placeholder</div>
+          <h3>species</h3>
+          <div id='speciesList'>Species-Placeholder</div>
+          <h3>type/race</h3>
+          <div id='typeList'>Type-Placeholder</div>
+          <h3>genetically mutated?</h3>
+          <div id='mutated'>Boolean-Placeholder</div>
+          <h3>natural-born powers?</h3>
+          <div id='naturalBornPowersList'>Boolean-Placeholder</div>
+          <h3>superpowers</h3>
+          <div id='superList'>Superpower-Placeholder</div>
+          <h3>superpower 2?</h3>
+          <div id='superList2'>Superpower-Placeholder</div>
+          <h3>age</h3>
+          <div id='ageRange'>Age-Placeholder</div>
+          <h3>sex</h3>
+          <div id='sexesList'>Sex-Placeholder</div>
+          <h3>sexuality</h3>
+          <div id='sexualityList'>Sexuality-Placeholder</div>
+          <h3>Experiances</h3>
+          <div id='proficiencyList'>Skills-Placeholder</div>
+          <h3>personalities</h3>
+          <div id='personality'>Personality-Placeholder</div>
+          <h3>ideologies</h3>
+          <div id='ideologyList'>Ideology-Placeholder</div>
+          <h3>place-of-origin</h3>
+          <div id='originLocation'>Origin-Placeholder</div>
+          <h3>diet</h3>
+          <div id='diet'>Diet-Placeholder</div>
+          <h3>ThreatLevel</h3>
+          <div id='threatLevel'>ThreatLevel-Placeholder</div>
+          <h3>element</h3>
+          <div id='element'>Element-Placeholder</div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <style>
+    #CharacterSheet {
+      display: none;
+    }
+  </style>
+  <script type="module">
+    import { newCharacter } from "./index.js";
+    window.addEventListener('click', e => {
+      switch (e.target.id) {
+        case 'humanoid':
+        case 'mythic':
+        case 'alien':
+        case 'creature':
+          newCharacter(e.target.id);
+          break;
+      }
+    })
+  </script>
+</body>

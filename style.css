@@ -14,6 +14,7 @@ html, body{
     right: 1%;
     visibility: visible;
     container-type: inline-size;
+    container-name: HeaderBox;
     z-index: 1;
 }
 #HeaderBox h1{
@@ -29,6 +30,7 @@ html, body{
 }
 .post{
     container-type: inline-size;
+    container-name: Post;
 }
 .post #BackgroundRectangle{
     background-color: beige;
@@ -44,74 +46,74 @@ html, body{
     margin-top: 0;
     border: transparent;
 }
+#HeaderBox2 {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 1%;
+    right: 1%;
+    visibility: visible;
+    container-type: inline-size;
+    container-name: HeaderBox2;
+    z-index: 1;
+}
+#HeaderBox2 h1{
+    margin-top: 0;
+    margin-bottom: 0;
+    border: transparent;
+    right: 20px;
+    font-size: 100px;
+    text-indent: 40px;
+    color: #0f0326;
+}
+.post #HotBarBackground{
+    background-color: beige;
+    height: 50px;
+}
+.post #HotBar{
+    margin-top: 10px;
+    margin-right: 1%;
+    margin-left: 1%;
+    background-color: #0000FF;
+    height: 30px;
+}
+#HeaderTriangle2 {
+    background-image: linear-gradient(to top left, transparent 50%, #0000FF 50%);
+    height: 80px;
+    width: 100%;
+    margin-top: 10px;
+    border: transparent;
+}
+#HeaderBox3 {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 1%;
+    right: 1%;
+    visibility: visible;
+    container-type: inline-size;
+    container-name: HeaderBox3;
+    z-index: 3;
+}
+.post #HeaderSide{
+    background-color: red;
+    height: 300px;
+    width: 1%;
+}
+.post #HeaderSideBottom{
+    background-color: red;
+    height: 10px;
+    width: 1%;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    /* border: 1px solid gray; */
+    border-top: 0;
+}
 
-@container (max-width: 850px) {
-    #HeaderBox h1{
-        font-size: 80px;
-    }
-    #HeaderTriangle{
-        height:80px
-    }
-}
-@container (max-width: 840px) {
-    .post #BackgroundRectangle{
-        height: 155px;
-    }
-} 
-@container (max-width: 700px) {
-    #HeaderBox h1{
-        font-size: 65px;
-        text-indent: 30px;
-    }
-    #HeaderTriangle{
-        height:70px
-    }
-} 
-@container (max-width: 690px) {
-    .post #BackgroundRectangle{
-        height: 130px;
-    }
-} 
-@container (max-width: 550px) {
-    #HeaderBox h1{
-        font-size: 50px;
-    }
-    #HeaderTriangle{
-        height:60px
-    }
-}
-@container (max-width: 540px) {
-    .post #BackgroundRectangle{
-        height: 110px;
-    }
-} 
-@container (max-width: 400px) {
-    #HeaderBox h1{
-        font-size: 40px;
-        text-indent: 20px;
-    } 
-    #HeaderTriangle{
-        height:50px
-    }
-} 
-@container (max-width: 390px) {
-    .post #BackgroundRectangle{
-        height: 85px;
-    }
-} 
-@container (max-width: 350px) {
-    #HeaderBox h1{
-        font-size: 30px;
-    } 
-    #HeaderTriangle{
-        height:40px
-    }  
-}  
-@container (max-width: 340px) {
-    .post #BackgroundRectangle{
-        height: 60px;
-    }
-} 
+
+
+
+
 
 
 .Body{
