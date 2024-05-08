@@ -4,7 +4,7 @@ purple:#4b006b;
  */
 
 html, body{
-    background-color: #b5d99c;
+    background-color: #ae561c;
 }
  #HeaderBox {
     overflow: hidden;
@@ -16,16 +16,20 @@ html, body{
     container-type: inline-size;
     container-name: HeaderBox;
     z-index: 1;
+    
 }
 #HeaderBox h1{
-    background-color: #ffff82;
+    
+    /* background-image: linear-gradient(to right, #650015 0, #650015 50%,#000080 100%); */
+    background: url(JPG/IMG_0834.jpg);
+    
     margin-top: 0;
     margin-bottom: 0;
     border: transparent;
     right: 20px;
     font-size: 100px;
     text-indent: 40px;
-    color: #0f0326;
+    color: #f6e27a;
     
 }
 .post{
@@ -33,14 +37,15 @@ html, body{
     container-name: Post;
 }
 .post #BackgroundRectangle{
-    background-color: beige;
+    background-color: #FFFDD0;
     height: 205px;
     margin-left: 10%;
     margin-right: 10%;
     z-index: 0;
 }
 #HeaderTriangle {
-    background-image: linear-gradient(to top left, transparent 50%, #ffff82 50%);
+    /* background-image: linear-gradient(to top left, transparent 50%, #462523 0, #cb9b51 68%, #f6e27a 72.5%, #f6f2c0 75%, #f6e27a 77.5%, #cb9b51 89%, #cb9b51 100%); */
+    background-image: linear-gradient(to top left, transparent 50%, #f6f2c0 0, #f6e27a 52.5%, #cb9b51 55%, #650015 56%, #650015 100%);
     height: 100px;
     width: 100%;
     margin-top: 0;
@@ -64,25 +69,36 @@ html, body{
     right: 20px;
     font-size: 100px;
     text-indent: 40px;
-    color: #0f0326;
+    color: #FFFDD0;
 }
 .post #HotBarBackground{
-    background-color: beige;
+    background-image: linear-gradient(to right, #650015 0, #650015 100%);
     height: 50px;
 }
-.post #HotBar{
+/* .post #HotBar{
     margin-top: 10px;
     margin-right: 1%;
     margin-left: 1%;
     background-color: #0000FF;
     height: 30px;
+} */
+#HeaderBlueSpacer{
+    background-image: linear-gradient(to right, #650015 0, #650015 100%);
+    height: 10px;
+    z-index: 0;   
+}
+#HeaderBlueTop{
+    background-image: linear-gradient(to bottom, #cb9b51 0, #f6e27a 25%, #f6f2c0 50%,#f6e27a 75%,#cb9b51 100%);
+    height: 7.5px;
+    z-index: 0;   
 }
 #HeaderTriangle2 {
-    background-image: linear-gradient(to top left, transparent 50%, #0000FF 50%);
+    background-image: linear-gradient(to top right, transparent 50%, #f6f2c0 0, #f6e27a 52.5%, #cb9b51 55%, #000080 56%, #000080 100%);
     height: 80px;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 0px;
     border: transparent;
+
 }
 #HeaderBox3 {
     overflow: hidden;
@@ -96,12 +112,12 @@ html, body{
     z-index: 3;
 }
 .post #HeaderSide{
-    background-color: red;
+    background-image: linear-gradient(to right,#cb9b51 0, #f6e27a 25%, #f6f2c0 50%, #f6e27a 25%, #cb9b51 100%);
     height: 300px;
     width: 1%;
 }
 .post #HeaderSideBottom{
-    background-color: red;
+    background-image: linear-gradient(to right,#cb9b51 0, #f6e27a 25%, #f6f2c0 50%, #f6e27a 25%, #cb9b51 100%);
     height: 10px;
     width: 1%;
     border-bottom-left-radius: 100px;
@@ -121,7 +137,7 @@ html, body{
     margin-right: 10%;
 }
 #content{
-    background-color: beige;
+    background-color: #FFFDD0;
     
 }
 #table{
