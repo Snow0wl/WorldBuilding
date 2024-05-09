@@ -4,7 +4,20 @@ purple:#4b006b;
  */
 
 html, body{
-    background-color: #ae561c;
+    background-image: url(JPG/IMG_0836.jpg);
+    background-size:auto;
+    background-position: fixed;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    animation: animBackground 60s linear infinite;
+    -moz-animation: animBackground 60s linear infinite;
+    -webkit-animation: animBackground 60s linear infinite;
+    margin:0;
+    padding:0;
+}
+@keyframes animBackground {
+    from {background-position-x:0px;}
+    to {background-position-x: -2000px;}
 }
  #HeaderBox {
     overflow: hidden;
@@ -16,6 +29,7 @@ html, body{
     container-type: inline-size;
     container-name: HeaderBox;
     z-index: 1;
+    
     
 }
 #HeaderBox h1{
@@ -38,7 +52,7 @@ html, body{
 }
 .post #BackgroundRectangle{
     background-color: #FFFDD0;
-    height: 205px;
+    height: 235px;
     margin-left: 10%;
     margin-right: 10%;
     z-index: 0;
@@ -46,7 +60,7 @@ html, body{
 #HeaderTriangle {
     /* background-image: linear-gradient(to top left, transparent 50%, #462523 0, #cb9b51 68%, #f6e27a 72.5%, #f6f2c0 75%, #f6e27a 77.5%, #cb9b51 89%, #cb9b51 100%); */
     background-image: linear-gradient(to top left, transparent 50%, #f6f2c0 0, #f6e27a 52.5%, #cb9b51 55%, #650015 56%, #650015 100%);
-    height: 100px;
+    height: 66px;
     width: 100%;
     margin-top: 0;
     border: transparent;
@@ -94,11 +108,10 @@ html, body{
 }
 #HeaderTriangle2 {
     background-image: linear-gradient(to top right, transparent 50%, #f6f2c0 0, #f6e27a 52.5%, #cb9b51 55%, #000080 56%, #000080 100%);
-    height: 80px;
+    height: 53px;
     width: 100%;
     margin-top: 0px;
     border: transparent;
-
 }
 #HeaderBox3 {
     overflow: hidden;
@@ -124,8 +137,38 @@ html, body{
     border-bottom-right-radius: 100px;
     /* border: 1px solid gray; */
     border-top: 0;
+    
 }
-
+#HeaderBox4 {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 98%;
+    right: 1%;
+    visibility: visible;
+    container-type: inline-size;
+    container-name: HeaderBox3;
+    z-index: 3;
+}
+.post2{
+    container-type: inline-size;
+    container-name: Post;
+}
+.post2 #HeaderSide{
+    background-image: linear-gradient(to right,#cb9b51 0, #f6e27a 25%, #f6f2c0 50%, #f6e27a 25%, #cb9b51 100%);
+    height: 300px;
+    width: 100%;
+}
+.post2 #HeaderSideBottom{
+    background-image: linear-gradient(to right,#cb9b51 0, #f6e27a 25%, #f6f2c0 50%, #f6e27a 25%, #cb9b51 100%);
+    height: 10px;
+    width: 100%;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    /* border: 1px solid gray; */
+    border-top: 0;
+    
+}
 
 
 
