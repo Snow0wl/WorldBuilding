@@ -6,9 +6,9 @@ html, body{
     background-position: fixed;
     background-repeat: repeat;
     background-attachment: scroll;
-    animation: animBackground 60s linear infinite;
-    -moz-animation: animBackground 60s linear infinite;
-    -webkit-animation: animBackground 60s linear infinite;
+    animation: animBackground 200s linear infinite;
+    -moz-animation: animBackground 200s linear infinite;
+    -webkit-animation: animBackground 200s linear infinite;
     margin:0;
     padding:0;
 }
@@ -191,4 +191,23 @@ h2{
 h1{
     margin-top: 0;
     margin-bottom: 10 px;
+}
+p{
+    color: #fffdd0;
+    background-color: #650015;
+    border: 5px #650015;
+    padding:8px;
+}
+.Body h1{
+    background-image: linear-gradient(to bottom,#cb9b51 0, #f6e27a 25%, #f6f2c0 50%, #f6e27a 25%, #cb9b51 100%);
+    color: black;
+}
+#table h3{
+    color: #fffdd0;
+    background-color: #000080;
+    border: 5px #650015;
+    padding:8px;
+}
+#CenteredImage {
+    text-align: center;
 }
