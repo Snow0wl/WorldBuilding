@@ -1,6 +1,426 @@
 {
     "mythic": {
-        "placeholder1": {
+        "Elf": {
+            "originLocation": "Forrests",
+            "nameList": [
+                "Thalorin",
+                "Elenath",
+                "Lorien",
+                "Galadriel",
+                "Elrond",
+                "Legolas",
+                "Arwen",
+                "Finrod",
+                "Elrohir",
+                "Arya",
+                "Faelan",
+                "Thranduil",
+                "Elara",
+                "Maedhros",
+                "Idril",
+                "Thalion",
+                "Nimloth",
+                "Arasael",
+                "Eärendil",
+                "Elanor",
+                "Thranduil",
+                "Galadwen",
+                "Lórien",
+                "Elurel",
+                "Celeborn",
+                "Elwing",
+                "Melian",
+                "Faelwen",
+                "Alasse",
+                "Eltharin",
+                "Luinil",
+                "Aerandir",
+                "Finarfin",
+                "Elenion",
+                "Lórien",
+                "Caladwen",
+                "Aragorn",
+                "Nenya",
+                "Thelrandir",
+                "Eowyn",
+                "Fíriel",
+                "Gilraen",
+                "Liriel",
+                "Elanessë",
+                "Alathar",
+                "Eärlindë",
+                "Finrod",
+                "Galathil",
+                "Idril",
+                "Thalassian",
+                "Faelyn",
+                "Lórien",
+                "Arathorn",
+                "Elandil",
+                "Elrond",
+                "Thalassë",
+                "Eärendur",
+                "Aegnor",
+                "Elrohir",
+                "Galadhon",
+                "Aerin",
+                "Elenwe"
+            ],
+            "naturalBornPowersList": [
+                "Archery",
+                "Telepathy"
+            ],
+            "ageRange": "1000",
+            "sexesList": [
+                "Male",
+                "Female"
+            ],
+            "sexualityList": [
+                "Heterosexual",
+                "Gay",
+                "GayBear",
+                "Androphila",
+                "Lesbian",
+                "LipstickLesbian",
+                "Gynephilia",
+                "Asexual",
+                "Demisexual",
+                "Autosexual",
+                "Bisexual",
+                "Pansexual",
+                "Polysexual",
+                "Skoliosexual",
+                "StraightAlly",
+                "GenderFluid",
+                "Androgynous",
+                "Drag/Feather",
+                "Genderqueer",
+                "GenderBinary",
+                "GenderNon-Binary",
+                "Hermaphrodite",
+                "Intersexual",
+                "Neutrois",
+                "Transexual",
+                "Transgender",
+                "Two-Spirit",
+                "Trigender",
+                "Aromantic",
+                "Greyromantic",
+                "Lithromantic",
+                "Demiromantic",
+                "Polyamourous"
+            ],
+            "ideologyList": [
+                "Druidic Traditions"
+            ],
+            "diet": "Omnivore",
+            "threatLevel": "?",
+            "element": "none"
+        },
+        "Dark Elf": {
+            "originLocation": "Dark Forrests",
+            "nameList": [
+                "Zar'ek",
+                "Lilandra",
+                "Drak'ul",
+                "Ylva",
+                "Thal'or",
+                "Vex'ara",
+                "Xyndra",
+                "Mal'zara",
+                "Ryl'eth",
+                "Kael'os",
+                "Nyx'ira",
+                "Sar'gor",
+                "Vael'drin",
+                "Xyra'keth",
+                "Zal'dur",
+                "Ylvana",
+                "Qil'ana",
+                "Zyr'tha",
+                "Mord'ra",
+                "Zel'ar",
+                "Vel'zara",
+                "Syndra",
+                "Kyr'el",
+                "Yr'loth",
+                "Dra'gul",
+                "Vyl'ora",
+                "Xal'dor",
+                "Ryl'eth",
+                "Nyx'ara",
+                "Zan'ik",
+                "Vel'dris",
+                "Qil'ena",
+                "Thal'zara",
+                "Vyr'el",
+                "Kyr'eth",
+                "Zyr'dor",
+                "Xyra'el",
+                "Lil'ith",
+                "Zal'kar",
+                "Syr'ana",
+                "Yl'dris",
+                "Zyr'ana",
+                "Vyr'zara",
+                "Kyr'ith",
+                "Xal'dris",
+                "Vel'ara",
+                "Ryl'ara",
+                "Nyx'eth",
+                "Zar'ana",
+                "Vex'ara",
+                "Syr'el",
+                "Yl'dris",
+                "Zal'gor",
+                "Qil'eth",
+                "Vyl'ara",
+                "Xyra'eth",
+                "Dra'zara",
+                "Kyr'ana",
+                "Zar'dris",
+                "Thal'eth"
+            ],
+            "naturalBornPowersList": [
+                "Archer",
+                "Telepathy",
+                "Enshrouded In Darkness"
+            ],
+            "ageRange": "1000",
+            "sexesList": [
+                "Male",
+                "Female"
+            ],
+            "sexualityList": [
+                "Heterosexual",
+                "Polyamourous"
+            ],
+            "ideologyList": [
+                "Demonic Worship",
+                "Ancestral Worship",
+                "Trial by Fire"
+            ],
+            "diet": "Carnivore",
+            "threatLevel": "?",
+            "element": "Darkness"
+        },
+        "Dwarf": {
+            "originLocation": "Mountains",
+            "nameList": [
+                "Kelious, the second"
+            ],
+            "naturalBornPowersList": [
+                "Placeholder3",
+                "p3",
+                "p4"
+            ],
+            "ageRange": "100",
+            "sexesList": [
+                "Placeholder5"
+            ],
+            "sexualityList": [
+                "Placeholder6"
+            ],
+            "ideologyList": [
+                "Placeholder7"
+            ],
+            "diet": "Placeholder8",
+            "threatLevel": "Placeholder9",
+            "element": "none"
+        },
+        "Vampire": {
+            "originLocation": "Placeholder1",
+            "nameList": [
+                "Kelious, the second"
+            ],
+            "naturalBornPowersList": [
+                "Placeholder3",
+                "p3",
+                "p4"
+            ],
+            "ageRange": "100",
+            "sexesList": [
+                "Placeholder5"
+            ],
+            "sexualityList": [
+                "Placeholder6"
+            ],
+            "ideologyList": [
+                "Placeholder7"
+            ],
+            "diet": "Placeholder8",
+            "threatLevel": "Placeholder9",
+            "element": "Placeholder10"
+        },
+        "Demon": {
+            "originLocation": "Placeholder1",
+            "nameList": [
+                "Kelious, the second"
+            ],
+            "naturalBornPowersList": [
+                "Placeholder3",
+                "p3",
+                "p4"
+            ],
+            "ageRange": "100",
+            "sexesList": [
+                "Placeholder5"
+            ],
+            "sexualityList": [
+                "Placeholder6"
+            ],
+            "ideologyList": [
+                "Placeholder7"
+            ],
+            "diet": "Placeholder8",
+            "threatLevel": "Placeholder9",
+            "element": "Placeholder10"
+        },
+        "God": {
+            "originLocation": "Placeholder1",
+            "nameList": [
+                "Kelious, the second"
+            ],
+            "naturalBornPowersList": [
+                "Placeholder3",
+                "p3",
+                "p4"
+            ],
+            "ageRange": "100",
+            "sexesList": [
+                "Placeholder5"
+            ],
+            "sexualityList": [
+                "Placeholder6"
+            ],
+            "ideologyList": [
+                "Placeholder7"
+            ],
+            "diet": "Placeholder8",
+            "threatLevel": "Placeholder9",
+            "element": "Placeholder10"
+        },
+        "Elemental": {
+            "originLocation": "Placeholder1",
+            "nameList": [
+                "Kelious, the second"
+            ],
+            "naturalBornPowersList": [
+                "Placeholder3",
+                "p3",
+                "p4"
+            ],
+            "ageRange": "100",
+            "sexesList": [
+                "Placeholder5"
+            ],
+            "sexualityList": [
+                "Placeholder6"
+            ],
+            "ideologyList": [
+                "Placeholder7"
+            ],
+            "diet": "Placeholder8",
+            "threatLevel": "Placeholder9",
+            "element": "Placeholder10"
+        },
+        "Giant": {
+            "originLocation": "Placeholder1",
+            "nameList": [
+                "Kelious, the second"
+            ],
+            "naturalBornPowersList": [
+                "Placeholder3",
+                "p3",
+                "p4"
+            ],
+            "ageRange": "100",
+            "sexesList": [
+                "Placeholder5"
+            ],
+            "sexualityList": [
+                "Placeholder6"
+            ],
+            "ideologyList": [
+                "Placeholder7"
+            ],
+            "diet": "Placeholder8",
+            "threatLevel": "Placeholder9",
+            "element": "Placeholder10"
+        },
+        "Dragon": {
+            "originLocation": "Placeholder1",
+            "nameList": [
+                "Kelious, the second"
+            ],
+            "naturalBornPowersList": [
+                "Placeholder3",
+                "p3",
+                "p4"
+            ],
+            "ageRange": "100",
+            "sexesList": [
+                "Placeholder5"
+            ],
+            "sexualityList": [
+                "Placeholder6"
+            ],
+            "ideologyList": [
+                "Placeholder7"
+            ],
+            "diet": "Placeholder8",
+            "threatLevel": "Placeholder9",
+            "element": "Placeholder10"
+        },
+        "Gnome": {
+            "originLocation": "Placeholder1",
+            "nameList": [
+                "Kelious, the second"
+            ],
+            "naturalBornPowersList": [
+                "Placeholder3",
+                "p3",
+                "p4"
+            ],
+            "ageRange": "100",
+            "sexesList": [
+                "Placeholder5"
+            ],
+            "sexualityList": [
+                "Placeholder6"
+            ],
+            "ideologyList": [
+                "Placeholder7"
+            ],
+            "diet": "Placeholder8",
+            "threatLevel": "Placeholder9",
+            "element": "Placeholder10"
+        },
+        "Angel": {
+            "originLocation": "Placeholder1",
+            "nameList": [
+                "Kelious, the second"
+            ],
+            "naturalBornPowersList": [
+                "Placeholder3",
+                "p3",
+                "p4"
+            ],
+            "ageRange": "100",
+            "sexesList": [
+                "Placeholder5"
+            ],
+            "sexualityList": [
+                "Placeholder6"
+            ],
+            "ideologyList": [
+                "Placeholder7"
+            ],
+            "diet": "Placeholder8",
+            "threatLevel": "Placeholder9",
+            "element": "Placeholder10"
+        },
+        "Spirit": {
             "originLocation": "Placeholder1",
             "nameList": [
                 "Kelious, the second"

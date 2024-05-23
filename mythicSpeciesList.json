@@ -1,6 +1,17 @@
 {
     "speciesList":
     [
-        "placeholder1"
+        "Elf",
+        "Dark Elf",
+        "Dwarf",
+        "Vampire",
+        "Demon",
+        "God",
+        "Elemental",
+        "Giant",
+        "Dragon",
+        "Gnome",
+        "Angel",
+        "Spirit"
     ]
 }
