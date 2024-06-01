@@ -184,9 +184,10 @@
             "naturalBornPowersList": [
                 "Archer",
                 "Telepathy",
-                "Enshrouded In Darkness"
+                "Enshrouded In Darkness",
+                "Dark Vision"
             ],
-            "ageRange": "1000",
+            "ageRange": "900",
             "sexesList": [
                 "Male",
                 "Female"
@@ -207,26 +208,88 @@
         "Dwarf": {
             "originLocation": "Mountains",
             "nameList": [
-                "Kelious, the second"
+                "Kelious, the second",
+                "Thrain Ironbeard",
+                "Gimli Stonehelm",
+                "Balin Fireforge",
+                "Dwalin Ironhammer",
+                "Gloin Deepdelve",
+                "Fili Oakenshield",
+                "Kili Stormbreaker",
+                "Durin Stoneheart",
+                "Dain Ironfist",
+                "Thorin Oakenshield",
+                "Bofur Ironhelm",
+                "Bifur Strongaxe",
+                "Bombur Ironbelly",
+                "Oin Thunderbeard",
+                "Gimor Granitejaw",
+                "Gorin Rockhand",
+                "Thror Steelspine",
+                "Thrain Silverbeard",
+                "Vorin Mountainbrew",
+                "Gundren Ironfoot",
+                "Gorm Firemantle",
+                "Grundin Flintforge",
+                "Grimnir Battlehammer",
+                "Thurin Stormshield",
+                "Thurgrim Deepstone",
+                "Tordek Forgeheart",
+                "Gorim Ironvein",
+                "Gurnir Granitehelm",
+                "Gorun Stonegrip",
+                "Grimnur Steelbeard",
+                "Gorunnar Ironhide",
+                "Grimli Frostbeard",
+                "Goroth Deepdelver",
+                "Thrain Frostforge",
+                "Thardin Stoneshield",
+                "Thorim Mountainheart",
+                "Thurin Frostbeard",
+                "Gorin Frostbeard",
+                "Gormir Goldhand",
+                "Grundur Ironbrow",
+                "Gorfinn Stonebeard",
+                "Thrain Stonewalker",
+                "Grimur Firebeard",
+                "Gormur Ironhelm",
+                "Grundin Goldhammer",
+                "Gornar Ironbreaker",
+                "Gorin Deepdelve",
+                "Thrain Strongaxe",
+                "Gurnar Ironheart",
+                "Thorgin Deepstone",
+                "Gorim Steelarm",
+                "Thror Thunderbeard",
+                "Gorin Stonefist",
+                "Grimli Earthshaker",
+                "Gorunnar Ironbrow",
+                "Grimnir Silverbeard",
+                "Thrain Steelsmith",
+                "Goromir Deepdelver",
+                "Gorli Frostbeard",
+                "Thurin Silveraxe"
             ],
             "naturalBornPowersList": [
-                "Placeholder3",
-                "p3",
-                "p4"
+                "Enhanced Strength",
+                "Dark Vision",
+                "Rune Crafting",
+                "Craftmanship"
             ],
-            "ageRange": "100",
+            "ageRange": "500",
             "sexesList": [
-                "Placeholder5"
+                "Male",
+                "Female"
             ],
             "sexualityList": [
-                "Placeholder6"
+                "Heterosexual"
             ],
             "ideologyList": [
-                "Placeholder7"
+                "Rock and Stone"
             ],
-            "diet": "Placeholder8",
-            "threatLevel": "Placeholder9",
-            "element": "none"
+            "diet": "Omnivore",
+            "threatLevel": "3",
+            "element": "Rock"
         },
         "Vampire": {
             "originLocation": "Placeholder1",
