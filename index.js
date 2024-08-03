@@ -1,12 +1,12 @@
-import humanoidCharacterStats from './humanoid.json' assert { type: 'json' };
-import mythicCharacterStats from './mythic.json' assert { type: 'json' };
-import alienCharacterStats from './alien.json' assert { type: 'json' };
-import creatureCharacterStats from './creature.json' assert { type: 'json' };
-import HumanoidSpecies from './humanoidSpeciesList.json' assert { type: 'json' };
-import MythicSpecies from './mythicSpeciesList.json' assert { type: 'json' };
-import AlienSpecies from './alienSpeciesList.json' assert { type: 'json' };
-import CreatureSpecies from './creatureSpeciesList.json' assert { type: 'json' };
-import generalCharacterStats from './generalCharacterStats.json' assert { type: 'json' };
+import humanoidCharacterStats from './humanoid.json' with { type: 'json' };
+import mythicCharacterStats from './mythic.json' with { type: 'json' };
+import alienCharacterStats from './alien.json' with { type: 'json' };
+import creatureCharacterStats from './creature.json' with { type: 'json' };
+import HumanoidSpecies from './humanoidSpeciesList.json' with { type: 'json' };
+import MythicSpecies from './mythicSpeciesList.json' with { type: 'json' };
+import AlienSpecies from './alienSpeciesList.json' with { type: 'json' };
+import CreatureSpecies from './creatureSpeciesList.json' with { type: 'json' };
+import generalCharacterStats from './generalCharacterStats.json' with { type: 'json' };
 
 function humanoidToList(character, species) {
     switch (true){
