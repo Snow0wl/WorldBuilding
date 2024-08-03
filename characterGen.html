@@ -48,10 +48,27 @@
     <div class="Body">
       <div id="content">
         <h1>Character Creation</h1>
-        <button name="file" id="humanoid">Humanoid</button>
-        <button name="file" id="mythic">Mythic</button>
-        <button name="file" id="alien">Alien</button>
-        <button name="file" id="creature">Creature</button>
+        <table id="table">
+          <colgroup>
+            <col span="1" style="width: 20%; height:500px">
+         </colgroup>
+         <th>
+          <!-- <p>Left Side</p> -->
+          <button name="file" id="humanoid">Humanoid</button>
+        </th>
+        <th>
+          <button name="file" id="mythic">Mythic</button>
+        </th>
+        <th>
+          <button name="file" id="alien">Alien</button>
+        </th>
+        <th>
+          <button name="file" id="creature">Creature</button>
+        </th>
+        <th>
+          <button name="file" id="custom">Custom</button>
+        </th>
+        </table>
         <div id='CharacterSheet'>
           <h3>name</h3>
           <div id='nameList'>Name-Placeholder</div>
@@ -88,6 +105,11 @@
           <h3>element</h3>
           <div id='element'>Element-Placeholder</div>
         </div>
+        <table>
+          <th>
+            <button name="file" id="clear">Clear Characters</button>
+          </th>
+        </table>
         <h1>Tools</h1>
         <h2>Home</h2>
         <a href="index.html">Home</a>
@@ -104,7 +126,91 @@
     #CharacterSheet {
       display: none;
     }
+    #humanoid {
+      background-color: #650015;  /* Navy blue background */
+      color: white;            /* White text */
+      padding: 15px 30px;      /* Large padding for a big button */
+      border: none;            /* No border */
+      border-radius: 5px;      /* Slightly rounded corners for a blockish appearance */
+      font-size: 20px;         /* Large font size */
+      font-weight: bold;       /* Bold text */
+      cursor: pointer;         /* Pointer cursor on hover */
+      text-align: center;      /* Center the text */
+      display: inline-block;   /* Make it an inline-block element */
+      width: 100%;             /* Make it block-level by setting width to 100% */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Add a slight shadow */
+      transition: background-color 0.3s;  /* Smooth transition on hover */
+
+    }
+    #mythic {
+      background-color: #000080;  /* Navy blue background */
+      color: white;            /* White text */
+      padding: 15px 30px;      /* Large padding for a big button */
+      border: none;            /* No border */
+      border-radius: 5px;      /* Slightly rounded corners for a blockish appearance */
+      font-size: 20px;         /* Large font size */
+      font-weight: bold;       /* Bold text */
+      cursor: pointer;         /* Pointer cursor on hover */
+      text-align: center;      /* Center the text */
+      display: inline-block;   /* Make it an inline-block element */
+      width: 100%;             /* Make it block-level by setting width to 100% */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Add a slight shadow */
+      transition: background-color 0.3s;  /* Smooth transition on hover */
+    }
+    #alien {
+      background-color: #650015;  /* Navy blue background */
+      color: white;            /* White text */
+      padding: 15px 30px;      /* Large padding for a big button */
+      border: none;            /* No border */
+      border-radius: 5px;      /* Slightly rounded corners for a blockish appearance */
+      font-size: 20px;         /* Large font size */
+      font-weight: bold;       /* Bold text */
+      cursor: pointer;         /* Pointer cursor on hover */
+      text-align: center;      /* Center the text */
+      display: inline-block;   /* Make it an inline-block element */
+      width: 100%;             /* Make it block-level by setting width to 100% */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Add a slight shadow */
+      transition: background-color 0.3s;  /* Smooth transition on hover */
+    }
+    #creature {
+      background-color: #000080;  /* Navy blue background */
+      color: white;            /* White text */
+      padding: 15px 30px;      /* Large padding for a big button */
+      border: none;            /* No border */
+      border-radius: 5px;      /* Slightly rounded corners for a blockish appearance */
+      font-size: 20px;         /* Large font size */
+      font-weight: bold;       /* Bold text */
+      cursor: pointer;         /* Pointer cursor on hover */
+      text-align: center;      /* Center the text */
+      display: inline-block;   /* Make it an inline-block element */
+      width: 100%;             /* Make it block-level by setting width to 100% */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Add a slight shadow */
+      transition: background-color 0.3s;  /* Smooth transition on hover */
+    }
+    #custom {
+      background-color: #650015;  /* Navy blue background */
+      color: white;            /* White text */
+      padding: 15px 30px;      /* Large padding for a big button */
+      border: none;            /* No border */
+      border-radius: 5px;      /* Slightly rounded corners for a blockish appearance */
+      font-size: 20px;         /* Large font size */
+      font-weight: bold;       /* Bold text */
+      cursor: pointer;         /* Pointer cursor on hover */
+      text-align: center;      /* Center the text */
+      display: inline-block;   /* Make it an inline-block element */
+      width: 100%;             /* Make it block-level by setting width to 100% */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Add a slight shadow */
+      transition: background-color 0.3s;  /* Smooth transition on hover */
+    }
   </style>
+  <script>
+    function HideDisplay() {
+      var x = document.getElementById("CharacterSheet");
+      if (x.style.display != "none") {
+        x.style.display = "none";
+      }
+    }
+  </script>
   <script type="module">
     import { newCharacter } from "./index.js";
     window.addEventListener('click', e => {
