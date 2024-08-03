@@ -1,7 +1,7 @@
 
 
 html, body{
-    background-image: url(JPG/IMG_0836.jpg);
+    background-image: url(JPG/IMG_0834.jpg);
     background-size:auto;
     background-position: fixed;
     background-repeat: repeat;
@@ -32,8 +32,8 @@ html, body{
 #HeaderBox h1{
     
     /* background-image: linear-gradient(to right, #650015 0, #650015 50%,#000080 100%); */
-    background: url(JPG/IMG_0834.jpg);
-    
+    background-color: #000000;
+    opacity: 90%;
     margin-top: 0;
     margin-bottom: 0;
     border: transparent;
@@ -48,7 +48,7 @@ html, body{
     container-name: Post;
 }
 .post #BackgroundRectangle{
-    background-color: #FFFDD0;
+    
     height: 235px;
     margin-left: 10%;
     margin-right: 10%;
@@ -177,7 +177,7 @@ html, body{
     margin-right: 10%;
 }
 #content{
-    background-color: #FFFDD0;
+    background-image: url(JPG/IMG_0994.jpg);
     
 }
 #table{

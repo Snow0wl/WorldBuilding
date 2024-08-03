@@ -107,7 +107,7 @@
         </div>
         <table>
           <th>
-            <button name="file" id="clear">Clear Characters</button>
+            <button id = "clear" onclick="HideDisplay()">Clear Characters</button>
           </th>
         </table>
         <h1>Tools</h1>
@@ -125,10 +125,12 @@
   <style>
     #CharacterSheet {
       display: none;
+      margin-left: 5px;
+      margin-right: 5px;
     }
     #humanoid {
       background-color: #650015;  /* Navy blue background */
-      color: white;            /* White text */
+      color: #FFFDD0;            /* White text */
       padding: 15px 30px;      /* Large padding for a big button */
       border: none;            /* No border */
       border-radius: 5px;      /* Slightly rounded corners for a blockish appearance */
@@ -144,7 +146,7 @@
     }
     #mythic {
       background-color: #000080;  /* Navy blue background */
-      color: white;            /* White text */
+      color: #FFFDD0;            /* White text */
       padding: 15px 30px;      /* Large padding for a big button */
       border: none;            /* No border */
       border-radius: 5px;      /* Slightly rounded corners for a blockish appearance */
@@ -159,7 +161,7 @@
     }
     #alien {
       background-color: #650015;  /* Navy blue background */
-      color: white;            /* White text */
+      color: #FFFDD0;            /* White text */
       padding: 15px 30px;      /* Large padding for a big button */
       border: none;            /* No border */
       border-radius: 5px;      /* Slightly rounded corners for a blockish appearance */
@@ -174,7 +176,7 @@
     }
     #creature {
       background-color: #000080;  /* Navy blue background */
-      color: white;            /* White text */
+      color: #FFFDD0;            /* White text */
       padding: 15px 30px;      /* Large padding for a big button */
       border: none;            /* No border */
       border-radius: 5px;      /* Slightly rounded corners for a blockish appearance */
@@ -189,7 +191,7 @@
     }
     #custom {
       background-color: #650015;  /* Navy blue background */
-      color: white;            /* White text */
+      color: #FFFDD0;            /* White text */
       padding: 15px 30px;      /* Large padding for a big button */
       border: none;            /* No border */
       border-radius: 5px;      /* Slightly rounded corners for a blockish appearance */
@@ -201,6 +203,41 @@
       width: 100%;             /* Make it block-level by setting width to 100% */
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Add a slight shadow */
       transition: background-color 0.3s;  /* Smooth transition on hover */
+    }
+    #clear {
+      background-color: #000000;  /* Navy blue background */
+      opacity:90%;
+      color: #FFFDD0;            /* White text */
+      padding: 15px 30px;      /* Large padding for a big button */
+      border: none;            /* No border */
+      border-radius: 5px;      /* Slightly rounded corners for a blockish appearance */
+      font-size: 20px;         /* Large font size */
+      font-weight: bold;       /* Bold text */
+      cursor: pointer;         /* Pointer cursor on hover */
+      text-align: center;      /* Center the text */
+      display: inline-block;   /* Make it an inline-block element */
+      width: 100%;             /* Make it block-level by setting width to 100% */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Add a slight shadow */
+      transition: background-color 0.3s;  /* Smooth transition on hover */
+    }
+    #humanoid:hover {
+      background-color: #49010f;  /* Darker blue on hover */
+    }
+    #mythic:hover {
+      background-color: #000053;  /* Darker blue on hover */
+    }
+    #alien:hover {
+      background-color: #49010f;  /* Darker blue on hover */
+    }
+    #creature:hover {
+      background-color: #000053;  /* Darker blue on hover */
+    }
+    #custom:hover {
+      background-color: #49010f;  /* Darker blue on hover */
+    }
+    #table {
+      border: #000053 5px solid;
+      width:95%;
     }
   </style>
   <script>
