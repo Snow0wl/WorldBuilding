@@ -1,30 +1,62 @@
 {
     "creature": {
-        "placeholder1": {
-            "originLocation": "Placeholder1",
+        "Werewolf": {
+            "originLocation": "The Dark Forrest",
             "nameList": [
-                "the terror"
+                "the terror of the night",
+                "the night's terror"
             ],
             "typeList": [
-                "place"
+                "beast"
             ],
             "naturalBornPowersList": [
-                "Placeholder3",
-                "p3",
-                "p4"
+                "thick furr",
+                "enhanced hearing",
+                "long claws",
+                "sharp teeth"
             ],
             "sexesList": [
-                "Placeholder5"
+                "male",
+                "female"
             ],
             "sexualityList": [
-                "Placeholder6"
+                "heterosexual"
             ],
             "genderList": [
-                "Placeholder6.5"
+                "none"
             ],
-            "diet": "Placeholder8",
-            "threatLevel": "Placeholder9",
-            "element": "Placeholder10"
+            "diet": "Carnivore",
+            "threatLevel": "4",
+            "element": "Dark"
+        },
+        "Swamp Thing":{
+            "originLocation": "The Dry Swamps",
+            "nameList": [
+                "the terror of the night",
+                "the night's terror"
+            ],
+            "typeList": [
+                "beast"
+            ],
+            "naturalBornPowersList": [
+                "thick furr",
+                "slime enduced coating",
+                "long claws",
+                "sharp teeth"
+            ],
+            "sexesList": [
+                "male",
+                "female"
+            ],
+            "sexualityList": [
+                "heterosexual"
+            ],
+            "genderList": [
+                "none"
+            ],
+            "diet": "Carnivore",
+            "threatLevel": "4",
+            "element": "Dark"
         }
     }
 }
