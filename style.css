@@ -56,7 +56,7 @@ html, body{
 }
 #HeaderTriangle {
     /* background-image: linear-gradient(to top left, transparent 50%, #462523 0, #cb9b51 68%, #f6e27a 72.5%, #f6f2c0 75%, #f6e27a 77.5%, #cb9b51 89%, #cb9b51 100%); */
-    background-image: linear-gradient(to top left, transparent 50%, #f6f2c0 0, #f6e27a 52.5%, #cb9b51 55%, #650015 56%, #650015 100%);
+    background-image: linear-gradient(to top left, transparent 50%, #f6f2c0 0, #f6e27a 52.5%, #cb9b51 55%, #650015 56%, #650015 100%);  
     height: 66px;
     width: 100%;
     margin-top: 0;
@@ -94,7 +94,7 @@ html, body{
     height: 30px;
 } */
 #HeaderBlueSpacer{
-    background-image: linear-gradient(to right, #650015 0, #650015 100%);
+    background-image: linear-gradient(to right, #000000 0, #000000 90%);
     height: 10px;
     z-index: 0;   
 }

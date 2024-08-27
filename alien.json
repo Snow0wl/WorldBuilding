@@ -81,6 +81,9 @@
             "sexualityList": [
                 "HeteroSexual"
             ],
+            "genderList": [
+                "None"
+            ],
             "ideologyList": [
                 "Religion of the Glacial Spirits, Common Surface Dweller Religion",
                 "Cavernous Faith, Common Subsurface Dweller Religion"
@@ -166,6 +169,9 @@
             ],
             "sexualityList": [
                 "Pansexual"
+            ],
+            "genderList": [
+                "None"
             ],
             "ideologyList": [
                 "Atheism, no beliefs",
@@ -263,6 +269,9 @@
                 "Asexual"
             ],
             "sexualityList": [
+                "None"
+            ],
+            "genderList": [
                 "None"
             ],
             "ideologyList": [

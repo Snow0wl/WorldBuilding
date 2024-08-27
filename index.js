@@ -200,19 +200,7 @@ function getMutated(chance,maxChance){
         document.getElementById("mutated").innerText = "false";
     }
 }
-function getSexuality(character,species,chance,maxChance){
-    if(character === "creature"){
-        document.getElementById("sexualityList").innerText = "false";
-        return;
-    }
-    var sexualityChance = Math.random() * maxChance;
-    if (sexualityChance > chance) {
-        document.getElementById("sexualityList").innerText = "Heterosexual";
-    }
-    else {
-        returnElement(character, species, "sexualityList");
-    }
-}
+
 function getNaturalBornPowers(character, species, highChance,maxChance){
     if(character === "humanoid"){
         document.getElementById("naturalBornPowersList").innerText = "false";
@@ -280,7 +268,9 @@ export function newCharacter(character) {
     //sex
     returnElement(character, species, "sexesList");
     //sexualities
-    getSexuality(character,species,lowChance,maxChance);
+    returnElement(character, species, "sexualityList");
+    //genders
+    returnElement(character, species, "genderList");
     //skills
     returnElement(character, species, "proficiencyList");
     //personalities
