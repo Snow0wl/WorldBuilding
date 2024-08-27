@@ -19,6 +19,9 @@
             "sexualityList": [
                 "Placeholder6"
             ],
+            "genderList": [
+                "Placeholder6.5"
+            ],
             "diet": "Placeholder8",
             "threatLevel": "Placeholder9",
             "element": "Placeholder10"

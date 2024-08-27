@@ -79,7 +79,10 @@
                 "Female"
             ],
             "sexualityList": [
-                "HeteroSexual"
+                "HeteroSexual",
+                "Bisexual",
+                "Asexual",
+                "Homosexual"
             ],
             "genderList": [
                 "None"

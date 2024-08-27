@@ -54,58 +54,76 @@
          </colgroup>
          <th>
           <!-- <p>Left Side</p> -->
-          <button name="file" id="humanoid">Humanoid</button>
+          <button name="file"  id="humanoid">Humanoid</button>
         </th>
         <th>
-          <button name="file" id="mythic">Mythic</button>
+          <button name="file"  id="mythic">Mythic</button>
         </th>
         <th>
-          <button name="file" id="alien">Alien</button>
+          <button name="file"  id="alien">Alien</button>
         </th>
         <th>
-          <button name="file" id="creature">Creature</button>
+          <button name="file"  id="creature">Creature</button>
         </th>
         <th>
-          <button name="file" id="custom">Custom</button>
+          <button name="file" onclick="HideDataDisplay()" id="custom" >Custom</button>
         </th>
         </table>
         <div id='CharacterSheet'>
           <h3>Name</h3>
           <div id='nameList'>Name-Placeholder</div>
+          <input type="text" class="textbox">
           <h3>Species</h3>
           <div id='speciesList'>Species-Placeholder</div>
+          <input type="text" class="textbox">
           <h3>Type/Race</h3>
           <div id='typeList'>Type-Placeholder</div>
+          <input type="text" class="textbox">
           <h3>Genetically Mutated?</h3>
           <div id='mutated'>Boolean-Placeholder</div>
+          <input type="text" class="textbox">
           <h3>Natural-Born Powers?</h3>
           <div id='naturalBornPowersList'>Boolean-Placeholder</div>
+          <input type="text" class="textbox">
           <h3>Superpowers</h3>
           <div id='superList'>Superpower-Placeholder</div>
+          <input type="text" class="textbox">
           <h3>Superpower 2?</h3>
           <div id='superList2'>Superpower-Placeholder</div>
+          <input type="text" class="textbox">
           <h3>Age</h3>
           <div id='ageRange'>Age-Placeholder</div>
+          <input type="text" class="textbox">
           <h3>Sex</h3>
           <div id='sexesList'>Sex-Placeholder</div>
+          <input type="text" class="textbox">
           <h3>Sexuality</h3>
           <div id='sexualityList'>Sexuality-Placeholder</div>
+          <input type="text" class="textbox">
           <h3>Gender</h3>
           <div id='genderList'>Gender-Placeholder</div>
+          <input type="text" class="textbox">
           <h3>Experiences</h3>
           <div id='proficiencyList'>Skills-Placeholder</div>
+          <input type="text" class="textbox">
           <h3>Personalities</h3>
           <div id='personality'>Personality-Placeholder</div>
+          <input type="text" class="textbox">
           <h3>Ideologies</h3>
           <div id='ideologyList'>Ideology-Placeholder</div>
+          <input type="text" class="textbox">
           <h3>Place-of-Origin</h3>
           <div id='originLocation'>Origin-Placeholder</div>
+          <input type="text" class="textbox">
           <h3>Diet</h3>
           <div id='diet'>Diet-Placeholder</div>
+          <input type="text" class="textbox">
           <h3>ThreatLevel</h3>
           <div id='threatLevel'>ThreatLevel-Placeholder</div>
+          <input type="text" class="textbox">
           <h3>Element</h3>
           <div id='element'>Element-Placeholder</div>
+          <input type="text" class="textbox">
         </div>
         <table>
           <th>
@@ -249,6 +267,66 @@
         x.style.display = "none";
       }
     }
+    function HideTextDisplay() {
+      var elements = document.getElementsByClassName("textbox");
+      for (const e of elements) {
+        if (e.style.display != "none") {
+        e.style.display = "none";
+        }
+      }
+      var w = document.getElementById("nameList");
+      if (w.style.display != "none") {
+        w.style.display = "block";
+        document.getElementById("speciesList").style.display = "block";
+        document.getElementById("typeList").style.display = "block";
+        document.getElementById("mutated").style.display = "block";
+        document.getElementById("naturalBornPowersList").style.display = "block";
+        document.getElementById("superList").style.display = "block";
+        document.getElementById("superList2").style.display = "block";
+        document.getElementById("ageRange").style.display = "block";
+        document.getElementById("sexesList").style.display = "block";
+        document.getElementById("sexualityList").style.display = "block";
+        document.getElementById("genderList").style.display = "block";
+        document.getElementById("proficiencyList").style.display = "block";
+        document.getElementById("personality").style.display = "block";
+        document.getElementById("ideologyList").style.display = "block";
+        document.getElementById("originLocation").style.display = "block";
+        document.getElementById("diet").style.display = "block";
+        document.getElementById("threatLevel").style.display = "block";
+        document.getElementById("element").style.display = "block";
+      }
+    }
+    function HideDataDisplay() {
+      document.getElementById("CharacterSheet").style.display = "block";
+      var w = document.getElementById("nameList");
+      if (w.style.display != "none") {
+        w.style.display = "none";
+        document.getElementById("speciesList").style.display = "none";
+        document.getElementById("typeList").style.display = "none";
+        document.getElementById("mutated").style.display = "none";
+        document.getElementById("naturalBornPowersList").style.display = "none";
+        document.getElementById("superList").style.display = "none";
+        document.getElementById("superList2").style.display = "none";
+        document.getElementById("ageRange").style.display = "none";
+        document.getElementById("sexesList").style.display = "none";
+        document.getElementById("sexualityList").style.display = "none";
+        document.getElementById("genderList").style.display = "none";
+        document.getElementById("proficiencyList").style.display = "none";
+        document.getElementById("personality").style.display = "none";
+        document.getElementById("ideologyList").style.display = "none";
+        document.getElementById("originLocation").style.display = "none";
+        document.getElementById("diet").style.display = "none";
+        document.getElementById("threatLevel").style.display = "none";
+        document.getElementById("element").style.display = "none";
+      }
+      var elements = document.getElementsByClassName("textbox");
+      for (const e of elements) {
+        if (e.style.display = "none") {
+        e.style.display = "block";
+        }
+      }
+    }
+
   </script>
   <script type="module">
     import { newCharacter } from "./index.js";
@@ -258,7 +336,8 @@
         case 'mythic':
         case 'alien':
         case 'creature':
-          newCharacter(e.target.id);
+        HideTextDisplay();  
+        newCharacter(e.target.id);
           break;
       }
     })
